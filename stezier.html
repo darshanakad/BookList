@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            border: 2px solid black;
+            background-color:white;
+
+        }
+        .nav{
+            text-align: center;
+            size: 100;
+            background-color: gray; 
+             word-spacing: 10px;
+             position: sticky ;
+             top:0;
+        
+            
+        }
+        a{
+            color: white;
+            font-size: 30px;
+        
+
+        }
+        .centered{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform:translate(-150%,-150%);
+        }
+        .slides{
+            text-align: center;
+        }
+        .top{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-900%,-900%);
+        }
+        .flex1{
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:300px;
+            text-align:left;
+            overflow:hidden;
+            
+            
+        }
+        .flex2{
+            position: absolute;
+            right: 500px;
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:500px;
+            text-align:center;
+            box-shadow: 20px 20px 10px grey;
+        }
+        .flex3{
+        
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position:absolute;
+            right:50px;
+            }
+            .flex4{
+            /* border: 2px solid black; */
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position: relative;
+            top: 10px;
+            }
+            .flex5{
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position: relative;
+            left:890px;
+            bottom: 190px;
+            padding: 20px;
+            
+
+            }
+            .flex6{
+            /* border: 2px solid black; */
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position: relative;
+            bottom: 150px;
+
+            }
+            .flex7{
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position: relative;
+            left: 430px; 
+            bottom:350px;
+            
+            }
+
+            .flex8{
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position: relative; 
+             left: 490px;
+             bottom: 350px;
+            }
+            .flex9{
+            /* border: 2px solid black; */
+            display: inline-flex;
+            width: 400px;
+            height:200px;
+            text-align:center;
+            position: relative;
+            right: 390px;
+            bottom: 110px;
+            }
+            .a1{
+                /* border: 2px solid black; */
+                display: inline-flex;
+                padding: 10px;
+                margin: 30px;
+
+            }
+            .a2{
+                /* border: 2px solid black; */
+                width: 400px;
+                height: 200px;
+                display: inline-flex;
+                position: relative;
+                left: 150px;
+                bottom: 350px;
+
+            }
+            .a3{
+                /* border: 2px solid black; */
+                width: 400px;
+                height: 200px;
+                position: relative;
+                left: 650px;
+                bottom: 320px;
+            }
+            .t1{
+                /* border: 2px solid black; */
+                width: 500px;
+                height: 100px;
+            }
+            .t2{
+                /* border: 2px solid black; */
+                width: 500px;
+                height: 100px;
+                outline-offset: 10px;
+            }
+            .t3{
+                /* border: 2px solid black; */
+                width: 530px;
+                height: 500px;
+                position: relative;
+                 left: 700px;
+                 bottom: 400px;
+                 /* box-shadow: 20px 20px 20px grey; */
+                 box-shadow: 20px 20px 10px grey;
+                 
+                }
+                .t4{
+                    /* border: 2px solid black; */
+                    width:500px;
+                    height: 100px;
+                    position: relative;
+                }
+                .t5{
+                    /* border: 2px solid black; */
+                    width:500px;
+                    height: 100px;
+                    position: relative;
+                }
+                .testi1{
+            /* border: 2px solid black; */
+                width: 300px;
+                height: 400px;
+                /* display: inline-flex; */
+                box-shadow: 1px 1px 10px gray;
+                position: relative;
+                    left: 10px;
+                /* border-bottom: 2px solid black; */
+
+                }
+                .testi2{
+                    /* border: 2px solid black; */
+                width: 300px;
+                height: 400px;
+                /* display: inline-flex; */
+                box-shadow: 1px 1px 10px gray;
+                outline-offset: 5px;
+                position: relative;
+                    left: 350px;
+                    bottom: 400px;
+                }
+                .testi3{
+                    /* border: 2px solid black; */
+                width: 300px;
+                height: 400px;
+                    /* display: inline-flex; */
+                    box-shadow: 1px 1px 10px gray;
+                    position: relative;
+                    left: 680px;
+                    bottom: 800px;
+                }
+                .testi4{
+                    /* border: 2px solid black; */
+                width: 300px;
+                height: 400px;
+                /* display: inline-flex; */
+                box-shadow: 1px 1px 10px gray;
+                position:relative;
+                left: 1010px;
+                bottom: 1200px;
+                }
+                .contact{
+                    /* border: 2px solid black; */
+                    width: 300px;
+                    height: 400px;
+                    position: relative;
+                    left: 100px;
+                    background-color: mediumslateblue;;
+                }
+                .a1{
+                    background-color: mediumslateblue;
+                }
+                .map{
+                    /* border: 2px solid black; */
+                    position: relative;
+                    left:400px;
+                }
+                .p{
+                    overflow: hidden;
+                }
+
+
+
+
+
+        h1{
+            text-align: center;
+            color:black;
+
+        }
+        /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.fa-color{
+    color:darkblue;
+
+}
+@media screen and (max-width: 768px){
+    body{
+        background-color: gray;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    body{
+        background-color: goldenrod;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    body{
+        background-color:saddlebrown;
+    }
+    
+}
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="nav">
+            <a href="#"> Stezier </a>
+            <a href="#"> Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="technologies">Technologies</a>
+            <a href="testimonials">Testimonials</a>
+            <a href="contact us">Contact us</a>
+        
+
+    </div>
+    <div class="slides">
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+            
+                
+<img src="./images/snowtops.jpg" alt="snow" style="width: 40%;"><div class="centered">centered</div>
+<div class="top">top</div>
+<!-- <img class="mySlides" src="./images/maldives3.jpg"> 
+<img class="mySlides" src="./images/maldives4.jpg">
+<img class="mySlides" src="./images/maldives5.jpg">-->
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+    </div>
+    <h1> Our Portfolio</h1>
+
+<b><p style="text-align: center;">Stezier is a preferred IT solutions and services provider for businesses and ISVs across the globe. The company is known by it’s innovative approach and valued customer services in solving customer’s complex business problems. Here are some of the areas of our expertise:</b>
+
+
+
+    </p>
+    
+        <br><br>
+        <br><br>
+        <div class="flex1">
+            
+           
+            <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+
+           
+            &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp Mobility<br><br>
+            With our expertise in mobile app based solutions, we are poised to conceptualize, build, distribute and maintain mobile app solutions for our customer’s unique needs. We have expertise in major SDKs and rapid development frameworks like: Ionic, React native, Flutter, Xamarin, Cordova.
+            
+            
+            
+        </div>
+        <div class="flex2">
+            <img src="./images/maldives3.jpg">
+    
+
+        </div>
+        <div class="flex3">
+            <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+             Product Engineering<br><br>
+Building a new product for your idea, or modernizing your existing product, Stezier is your one stop gateway. Get the best for your unique product requirement our innovative solutions and excellent service delivery.
+        </div>
+        <div class="flex4">
+            <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Web solutions<br><br> 
+We offer client-server based web solutions for enterprise and retail customers with various technology stacks to offer viz: MEAN, MERN, Angular, React, JAM, PHP, Node, ASP.NET Core, ASP NET MVC, WebAPI, EF, MS Sql Server, MySql, Firebase etc.
+
+
+         </div> 
+         <div class="flex5">
+                     <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+
+                          Data<br><br> 
+Our Data solutions expertise spans across: Data management - Data architecture, analysis and design, database administration/management and security, data warehousing and Business Intelligence management; Data analytics & Business Intelligence Services– with use of these services, an enterprise deriving valuable insights by tapping all it’s data sources internal or external.
+
+
+
+         </div>
+        <div class="flex6"> 
+               <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+
+                    Bespoke business productivity solutions<br><br>
+When you want to start, grow or streamline into your business processes, we have a bunch of solutions be it: Content Management System, Learning Management System, Document Management System, eCommerce solutions, Product Catalog portals, web portals, intranet collaborations solutions to name a few. Please get in touch with us to explore more.
+
+
+
+        </div>
+         <div class="flex7">
+            <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+
+            Cloud<br><br>
+Cloud computing being an emerging area that offers many potential benefits organizations to build, scale up-down and maintain IT infrastructure on demand. With our specialization in cloud solutions, we enable our customers by transforming their IT infrastructure to cloud to suit their business needs. We offer Microsoft Azure and Amazon AWS cloud solutions to optimize customer’s costs, IT operations and SLAs.
+
+
+
+        </div>
+         <div class="flex8">
+            <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+
+            Blockchain<br><br>
+We assist companies to explore and develop innovative blockchain solutions across their organization utilizing our technical capabilities and expertise to extract genuine business value.
+
+
+        </div>
+         <div class="flex9">
+            <i class="fa fa-check-circle fa-2x fa-color" aria-hidden="true" ></i>
+
+            Artificial Intelligence/Machine Learning<br><br>
+We offer cost and time effective and business goal oriented AI/ML solutions. Our team is experienced and capable enough to leverage latest developments in AI/ML solutions to enable our customers gain a competitive edge in the market. Our ML solutions self-learn from complex business data and make critical business decisions with ease.
+
+
+
+        </div>
+        <hr>
+        <h1>About Us</h1>
+        <div class="a1">
+        <img src="./images/cake.jpg " style="height: 400px; width:500px" >
+        </div>
+        <div class="a2">
+            Who we are<br><br>
+We are a group of technology ninjas, who have worked on Product Engineering, Data solutions, Web solutions, Mobile solutions. We have worked with established organizations as well as with startups to bring disruptive IT solutions. With our expertise and working with such organizations, we are powered with capabilities to offer cutting edge IT solutions within your budget.
+
+
+        </div>
+        
+        <div class="a3">
+           <b> What we do</b><br><br>
+We work with organizations to execute their technology innovation not just as a service provider but as a partner. We leave no stone unturned to successfully deliver customer’s unique business needs for IT solutions.
+
+
+
+        </div>
+        <hr>
+        <h1>Technology Stack</h1>
+        <div class="t1">
+            <!-- <i class="fa fa-windows fa-3x fa-color" aria-hidden="true"></i> -->
+            <i class="fa fa-th-large fa-3x fa-color" aria-hidden="true"></i>
+
+
+            Microsoft Technologies
+ASP.NET Core, ASP.NET MVC, Entity Framework Core, ADO.NET, Azure, SQL Server
+
+
+
+        </div>
+        <div class="t2">
+            <i class="fa fa-mobile fa-3x fa-color" aria-hidden="true"></i>
+            Mobile
+Ionic, React native, Native Script, Flutter, Xamarin, Cordova, Android, iOS
+
+
+
+            
+        </div>
+            <div class="t4">
+                
+                <i class="fa fa-industry fa-3x fa-color" aria-hidden="true"></i>
+                Bespoke business productivity solutions
+Open source, Angular, React, WordPress, Drupal, Joomla, Magento, WooCommerce, DevOps, MicroServices, AI, ML
+
+
+
+
+
+
+            </div>
+            <div class="t5">
+                <i class="fa fa-database fa-3x fa-color" aria-hidden="true"></i>
+                Databases
+Microsoft SQL Server, Oracle, MySQL, PostgreSQL, MongoDB, Cassandra, Firebase
+
+
+
+
+            </div>
+            
+
+    
+        <div class="t3">
+            <img src="./stezierpics/img1.png" style="width: 530px;">
+
+        </div>
+        <hr>
+        <h1>Testimonials</h1>
+        <div class="testi1">
+            Niranjan has provided software development and support for my company website at CAHBA.com as well as back office support and ongoing updates for the past year. He has delivered excellent work on time and at a good value. I recommend Niranjan for your software development needs.
+            <br><br><br><br><br><br><br><br><br><br>
+            <hr>
+
+         <p style="color:blue"> Founder and CEO, a health insurance quotations company, California, USA</p>
+
+
+
+        </div>
+        <div class="testi2">
+            Niranjan has worked with Western Industrial Solutions, providing great advice and come through on some challenging assignments
+
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <hr><p style="color:blue">Founder and CEO, a leading industrial safety documentation automation company, BC, Canada</p>
+
+
+
+        </div>
+        <div class="testi3">
+            Niranjan developed software for my company. I have worked extensively with him over the past 3 years, he has always been professional, helpful and has a strong willingness to listen, understand his client and meet their needs. Thankyou for all your work, it is greatly appreciated.
+
+            <br><br><br><br><br><br><br><br><br><br>
+            <hr><p style="color:blue">Founder, a leading real-estate company, Perth, Australia</p>
+
+
+
+        </div>
+        <div class="testi4">
+            Niranjan was recommended to me to help develop my business website. I was very happy with the very high level of technical expertise, customer service and willingness to help me with several additional technical tasks that presented themselves along the way. Thankyou for all your help..so far.
+            <br><br><br><br><br><br><br><br><br><br>
+            <hr><p style="color:blue">Manager, a leading eLearning company, Perth, Australia</p>
+
+
+
+
+        </div>
+        <hr>
+        <div class="a1">
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <p>
+                #214, 2nd Floor, R Cube, Atul Nagar, Warje
+                Pune-411 058. Maharashtra, INDIA</p>
+                 <p>+91-9881466649</p>
+<p>contact@stezier.com</p>
+  <p>Send Message
+© 2013 Copyright: Stezier.com - Stezier Technology Consulting Pvt. Ltd.</p>
+            </p>
+            
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9452442723036!2d73.79408501420357!3d18.48613927505271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfd33ded5b23%3A0xd0d88b6c8fde978!2sStezier%20Technology%20Consulting%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1630825462602!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        </div>
+        </div>
+
+        
+    
+</body>
+</html>
